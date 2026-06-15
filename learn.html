@@ -1,0 +1,191 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/learn.css">
+</head>
+<style>
+
+    body{
+        margin: 0; overflow: hidden;
+    }
+
+    .hero-section { display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Poppins, sans-serif; }
+    
+    .hero-container { display: flex; }
+    
+    .hero-background { position: absolute; inset: 0; height: 100%; width: 100%; object-position: center; }
+    
+    .hero-border { position: absolute; height: 100%; border: 6px solid #ffd102; top: 0; left: 0; }
+    
+    .hero-content { position: relative; display: flex; flex-direction: column; align-items: flex-start; flex-grow: 1; flex-basis: 0; width: fit-content; margin: auto 0; padding-left: 75px;}
+    
+    .header { display: flex; width: 100%; max-width: 1562px; gap: 20px; color: #fff; flex-wrap: wrap; justify-content: space-between; }
+    
+    .logo-container { font-size: 30px; font-weight: 800; letter-spacing: 0.9px; padding-top: 10px; display: flex;
+        align-items: center;}
+    
+    .logo-image { aspect-ratio: 0.98; object-fit: contain; object-position: center; width: 55px; }
+    
+    .logo-text { align-self: flex-start; margin-top: 5px;}
+    
+    .nav-menu { align-self: flex-end; display: flex; margin-top: 21px; gap: 40px 62px; font-size: 20px; font-weight: 600; letter-spacing: 4.6px; color: #FFFFFF;
+        text-decoration: none;}
+    
+    .nav-item { background-blend-mode: normal; padding-left: 8px;}
+
+    .nav-item:hover {
+        opacity: 100%;
+    }
+
+    .nav-item-bad { opacity: 50%;}
+    .nav-item-bad:hover {
+        opacity: 100%;
+    }
+    
+    .nav-about { display: flex; flex-direction: column; white-space: nowrap; }
+    
+    .nav-icon { aspect-ratio: 22.73; object-fit: contain; object-position: center; width: 90px; }
+
+    .hero-subtitle { color: #FFD102;
+  position: absolute;
+  top: 237px;
+  font: 700 34px Poppins, sans-serif;
+  letter-spacing: 3.5px; }
+    
+    .hero-title { background-blend-mode: normal; color: #fff; text-shadow: -3px 3px 0 #ffd102; letter-spacing: 14.43px; margin-top: 243px; font: 400 111px Zen Dots, sans-serif;font-family: "Zen Dots", sans-serif; }
+    
+    .title-underline { margin-top: -50px; width: 115px; border: 2px solid #f8d837; }
+    
+    .hero-description { background-blend-mode: normal; color: #fff; font-size: 20px; font-weight: 400; line-height: 20px; margin-top: 58px; width: 492px; }
+    
+    .cta-container { display: flex; margin-top: 67px; width: 235px; max-width: 100%; flex-direction: column; font-weight: 600;}
+    .cta-container a { text-decoration: none; }
+    
+    .cta-button { border: none; border-radius: 100px; background-color: #ffd102; display: flex; min-height: 38px; width: 100%; flex-direction: column; overflow: hidden; font-size: 20px; color: #000; letter-spacing: 2px; justify-content: center; }
+    
+    .cta-text { font: 700 20px Poppins, sans-serif;}
+    
+    .cta-secondary { background-blend-mode: normal; color: #fff; font-size: 22px; letter-spacing: 4.4px; margin: 24px 12px 0 0; }
+    
+    .kids-logo { background-blend-mode: normal; color: #fff; font-size: 30px; font-weight: 900; letter-spacing: 3.6px; margin-top: 30px; }
+    
+    .footer { align-self: flex-end; display: flex; gap: 24px; font-size: 16px; color: #76768f; font-weight: 500; flex-wrap: wrap; margin-top: 100px;
+        padding: 10px;}
+    
+    .footer-logo { aspect-ratio: 5.99; object-fit: contain; object-position: center; width: 192px; max-width: 100%; }
+    
+    .footer-text { flex-basis: auto; flex-grow: 1; margin: auto 0; }
+
+    @media (max-width: 991px) {
+
+.hero-container { max-width: 100%; padding-right: 20px; }
+
+.hero-border { display: none; }
+
+.hero-content, .header, .nav-menu, .hero-description, .cta-container, .footer { max-width: 100%; }
+
+.nav-about { white-space: initial; }
+
+.nav-item-about { margin-right: 2px;}
+
+.hero-title { max-width: 100%; margin-top: 40px; font-size: 40px; }
+
+.hero-description, .cta-container, .footer { margin-top: 40px; }
+
+.cta-text { padding: 0 20px; }
+
+.cta-secondary { margin: 0 10px 0 9px; }
+
+.kids-logo { margin-left: 4px; }
+
+}
+
+</style>
+
+<section class="hero-section">
+
+    <div class="hero-container">
+  
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/26d1f9dc0bfb4d7f44b3a464736511cc448eda8f503092fd3d88640a7b9580fe?apiKey=ea5d22e1874f4ed19dcbdbd830c50a26&" alt="" class="hero-background" />
+  
+      <div class="hero-border"></div>
+  
+      <div class="hero-content">
+  
+        <header class="header">
+  
+          <div class="logo-container">
+  
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f36a99effa44ba44445d45e551b43aa643bd4d3e402445d7e0b402af53d78edf?apiKey=ea5d22e1874f4ed19dcbdbd830c50a26&" alt="Orreria logo" class="logo-image" />
+  
+            <span class="logo-text">ORRERIA</span>
+  
+          </div>
+  
+          <nav class="nav-menu">
+
+            <div class="nav-about">
+  
+                <a class="nav-item nav-item-about">HOME</a>
+    
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/047d91185e3bb6f2da8b2a81fb907eb38ef95fc1843334116fa8f5b210fe0b90?apiKey=ea5d22e1874f4ed19dcbdbd830c50a26&" alt="" class="nav-icon" />
+    
+              </div>
+  
+            <a class="nav-item nav-item-bad">ABOUT</a>
+  
+            <a class="nav-item nav-item-bad">IMPACT</a>
+  
+            <a class="nav-item nav-item-bad">CONTACT US</a>
+  
+          </nav>
+  
+        </header>
+
+        <div class="GeneralContainer"><div id="cb46e2b8-0631-42c5-a8ea-7d8d7029339a" class="StackModule"><div class="TextModule__Container TextModule__Container--grey"><div class="TextModule container--hub TextModule--grey"><div class="TextModule__Content"><div class="TextModule__Content__Inside"><div class="TextModule__Content__Heading TextModule__Content__Heading--allCaps TextModule__Content__Heading--noText">More in space</div></div></div></div></div></div><div class="GridPromoTile"><div class="GridPromoTile__Row"><div class="col col col-bottom-gutter-2 col-lg-8 col-sm-no-gutter" aria-label="Space Explorer"><div class="GridPromoTile__Tile"><article class="PromoTile__Type--hero PromoTile PromoTile__Theme--light PromoTile__Layout--vertical PromoTile__Type--hero"><a class="AnchorLink PromoTile__Link" tabindex="0" aria-label="Space Explorer, Play" href="https://kids.nationalgeographic.com/games/action-adventure/article/space-explorer" id="1f7b86c7-3fe9-46ef-8c4f-20d344fc646a_ee6da085-aaf4-4f1d-ac65-d7262933455a" target="_self"><span class="sr-only">Space Explorer</span></a><footer class="BackgroundImage BackgroundImage--zoom PromoTile__Footer"><div class="RatioFrame aspect-ratio--3x2"></div><span class="BackgroundImage__Image BackgroundImage__Image--lowRes" style="background-position: center center; transition: transform 0.25s, opacity 0.5s; background-image: url(&quot;https://i.natgeofe.com/k/f50e42da-daa5-47b3-a51f-a77493f1fb6b/space-explorer-promo_4x3.jpg?wp=1&amp;w=718&amp;h=539&quot;);"></span><span class="BackgroundImage__Image BackgroundImage__Image--highRes BackgroundImage__Image--visible" style="background-position: center center; transition: transform 0.25s, opacity 0.5s; background-image: url(&quot;https://i.natgeofe.com/k/f50e42da-daa5-47b3-a51f-a77493f1fb6b/space-explorer-promo_4x3.jpg?wp=1&amp;w=718&amp;h=539&quot;);"></span><div class="PromoTile__Section_and_title"><div class="PromoTile__Section"><ul class="SectionLabelWrapper"><li class="SectionLabel">Action</li><li class="SectionLabel">Adventure</li></ul></div><h3 class="PromoTile__Title PromoTile__Title--visible">Space Explorer</h3></div><div class="PromoTile__Description">Embark on a cosmic journey. Help an astronaut explore space!</div></footer></article></div></div></div></div><div id="1f7b86c7-3fe9-46ef-8c4f-20d344fc646a" class="StackModule hide-children"></div></div>
+
+<!-- 
+      <div class="kids-logo">
+
+        <span style="color: #ff3939">O</span>
+
+        <span style="color: #735dff">R</span>
+
+        <span style="color: #85fff8">R</span>
+
+        <span style="color: #99ff69">E</span>
+
+        <span style="color: #ff7b7b">R</span>
+
+        <span style="color: #f8d837">I</span>
+
+        <span style="color: #97ff72">A</span>
+
+        <span style="color: #735dff">K</span>
+
+        <span style="color: #ff3939">i</span>
+
+        <span style="color: #f8d837">D</span>
+
+        <span style="color: #85fff8">S</span>
+
+      </div> -->
+
+      <footer class="footer">
+
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a889b776b79d3ca3923e024320410a1b2f50054c95d445480ecb63d7b3a01f42?apiKey=ea5d22e1874f4ed19dcbdbd830c50a26&" alt="NASA Space Apps Challenge logo" class="footer-logo" />
+
+        <p class="footer-text">Team Keplerians@2024 Nasa Space Apps Challenge</p>
+
+      </footer>
+
+    </div>
+
+  </div>
+
+</section>
