@@ -265,19 +265,6 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 
-.btn-kids {
-  background: transparent;
-  color: var(--white);
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  min-width: 200px;
-  height: 36px;
-  font-size: 20px;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  text-transform: none;
-  gap: 0;
-  padding: 6px 18px;
-}
 
 #page-home .hero-badge,
 #page-home .hero-title,
@@ -577,12 +564,6 @@ ul { list-style: none; }
     min-width: 170px;
     border-width: 1.5px;
   }
-  .btn-kids {
-    height: 32px;
-    font-size: 17px;
-    min-width: 170px;
-    border-width: 1.5px;
-  }
   .sidebar-bar {
     width: 3px;
   }
@@ -677,12 +658,6 @@ ul { list-style: none; }
   .btn-outline {
     height: 24px;
     font-size: 12px;
-    min-width: 140px;
-    border-width: 1.5px;
-  }
-  .btn-kids {
-    height: 26px;
-    font-size: 15px;
     min-width: 140px;
     border-width: 1.5px;
   }
