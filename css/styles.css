@@ -70,42 +70,48 @@ ul { list-style: none; }
 
 .navbar {
   position: fixed;
-  top: 16px;
+  top: 42px;
   left: 0;
   right: 0;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px 0 8px;
+  padding: 0 60px;
   pointer-events: none;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 14px;
   pointer-events: auto;
 }
 
 .logo-icon {
   flex-shrink: 0;
-  width: 18px;
-  height: 18px;
+}
+
+.logo-text {
+  font-family: var(--font-body);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--white);
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 48px;
   pointer-events: auto;
 }
 
 .nav-link {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.23em;
   color: var(--white);
   opacity: 0.5;
   transition: opacity 0.3s;
@@ -114,28 +120,20 @@ ul { list-style: none; }
   cursor: pointer;
 }
 
+.nav-link:hover,
+.nav-link.active {
+  opacity: 1;
+}
+
 .nav-link.active::after {
   content: '';
   position: absolute;
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 40px;
-  height: 2px;
+  width: 90px;
+  height: 4px;
   background: var(--gold);
-}
-
-.logo-text {
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  color: var(--white);
-}
-
-.nav-link:hover,
-.nav-link.active {
-  opacity: 1;
 }
 
 /* ===== PAGES ===== */
@@ -159,7 +157,7 @@ ul { list-style: none; }
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 6vh 0 0 120px;
+  padding: 6vh 0 0 103px;
   pointer-events: none;
 }
 
@@ -174,41 +172,41 @@ ul { list-style: none; }
 
 .hero-badge {
   font-family: var(--font-body);
-  font-size: 8px;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--gold);
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-title {
   font-family: var(--font-title);
-  font-size: 28px;
+  font-size: 111px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.13em;
   color: var(--white);
   text-shadow: -3px 3px 0px var(--gold);
-  margin-bottom: 4px;
+  margin-bottom: 16px;
 }
 
 .hero-tagline {
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 20px;
   color: var(--white);
   opacity: 0.85;
-  max-width: 240px;
-  margin-bottom: 8px;
+  max-width: 492px;
+  margin-bottom: 20px;
 }
 
 .hero-divider {
-  width: 28px;
-  height: 2px;
+  width: 115px;
+  height: 4px;
   background: var(--gold-line);
-  margin-bottom: 10px;
+  margin-bottom: 36px;
   border-radius: 2px;
 }
 
@@ -217,13 +215,13 @@ ul { list-style: none; }
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 4px 10px;
+  padding: 10px 24px;
   border: none;
   border-radius: 100px;
   font-family: var(--font-body);
-  font-size: 8px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 14px;
+  line-height: 30px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
@@ -233,8 +231,8 @@ ul { list-style: none; }
 .btn-primary {
   background: var(--gold);
   color: #000000;
-  min-width: 90px;
-  height: 18px;
+  min-width: 235px;
+  height: 38px;
 }
 
 .btn-primary:hover {
@@ -246,16 +244,16 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
-  margin-top: 10px;
+  gap: 14px;
+  margin-top: 36px;
 }
 
 .btn-outline {
   background: transparent;
   color: var(--white);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  min-width: 90px;
-  height: 18px;
+  min-width: 235px;
+  height: 38px;
   letter-spacing: 0.2em;
 }
 
@@ -269,14 +267,14 @@ ul { list-style: none; }
   background: transparent;
   color: var(--white);
   border: 2px solid rgba(255, 255, 255, 0.15);
-  min-width: 90px;
-  height: 20px;
-  font-size: 10px;
+  min-width: 235px;
+  height: 46px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: none;
   gap: 0;
-  padding: 3px 10px;
+  padding: 10px 24px;
 }
 
 .btn-kids:hover {
@@ -301,30 +299,30 @@ ul { list-style: none; }
 
 .overlay-panel {
   position: absolute;
-  left: 48px;
-  right: 48px;
-  top: 80px;
-  bottom: 80px;
+  left: 78px;
+  right: 78px;
+  top: 141px;
+  bottom: 141px;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  padding: 32px 36px 24px;
+  border-radius: 19px;
+  padding: 100px 96px 80px;
   display: flex;
   flex-direction: column;
 }
 
 .overlay-close {
   position: absolute;
-  top: 10px;
-  right: 12px;
-  width: 18px;
-  height: 18px;
+  top: 24px;
+  right: 28px;
+  width: 36px;
+  height: 36px;
   border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   color: var(--white);
-  font-size: 11px;
+  font-size: 24px;
   line-height: 1;
   cursor: pointer;
   display: flex;
@@ -341,40 +339,40 @@ ul { list-style: none; }
 
 .overlay-title {
   font-family: var(--font-body);
-  font-size: 18px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: 0.14em;
   color: var(--white);
-  margin-bottom: 14px;
+  margin-bottom: 48px;
 }
 
 .overlay-text {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: 23px;
   font-weight: 600;
-  line-height: 18px;
-  letter-spacing: 0.1em;
+  line-height: 34px;
+  letter-spacing: 0.16em;
   color: var(--white);
-  max-width: 540px;
+  max-width: 1414px;
 }
 
 /* Contact form inside overlay */
 .overlay-panel .contact-form {
-  margin-top: 14px;
-  max-width: 360px;
+  margin-top: 32px;
+  max-width: 560px;
 }
 
 .overlay-panel .form-input,
 .overlay-panel .form-textarea {
   width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 12px;
+  padding: 13px 18px;
+  margin-bottom: 16px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
+  border-radius: 10px;
   color: var(--white);
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   outline: none;
 }
@@ -397,23 +395,49 @@ ul { list-style: none; }
 
 .footer {
   position: fixed;
-  bottom: 14px;
-  right: 32px;
+  bottom: 30px;
+  right: 80px;
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 24px;
   pointer-events: none;
 }
 
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
   pointer-events: auto;
 }
 
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--social-border);
+  color: var(--social-border);
+  transition: all 0.3s;
+}
 
+.social-link:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #000000;
+}
+
+.footer-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--footer-text);
+  white-space: nowrap;
+  pointer-events: auto;
+}
 
 /* ===== RESPONSIVE ===== */
 
@@ -422,312 +446,281 @@ ul { list-style: none; }
     padding: 0 40px;
   }
   .nav-menu {
-    gap: 12px;
+    gap: 36px;
   }
   .hero-title {
-    font-size: 24px;
+    font-size: 80px;
   }
   .hero-badge {
-    font-size: 7px;
+    font-size: 28px;
   }
   #page-home {
-    padding-left: 100px;
+    padding-left: 70px;
   }
   .overlay-panel {
-    padding: 32px 36px;
-    left: 36px;
-    right: 36px;
-    top: 70px;
-    bottom: 70px;
+    padding: 50px 60px;
+    left: 40px;
+    right: 40px;
+    top: 100px;
+    bottom: 100px;
   }
   .overlay-title {
-    font-size: 20px;
-    margin-bottom: 16px;
+    font-size: 38px;
+    margin-bottom: 28px;
   }
   .overlay-text {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .footer {
-    right: 32px;
+    right: 50px;
   }
 }
 
 @media (max-width: 1024px) {
   .navbar {
-    padding: 0 24px;
+    padding: 0 30px;
   }
   .nav-menu {
-    gap: 12px;
+    gap: 28px;
   }
   .nav-link {
-    font-size: 9px;
+    font-size: 17px;
   }
   .nav-link.active::after {
-    width: 50px;
-    height: 3px;
+    width: 65px;
   }
   #page-home {
-    padding-left: 80px;
+    padding-left: 50px;
+    padding-top: 4vh;
   }
   .hero-title {
-    font-size: 22px;
+    font-size: 64px;
   }
   .hero-badge {
-    font-size: 7px;
+    font-size: 24px;
   }
   .hero-tagline {
-    font-size: 8px;
-    max-width: 200px;
-  }
-  .hero-divider {
-    width: 22px;
-    margin-bottom: 8px;
-  }
-  .btn {
-    font-size: 7px;
-    padding: 3px 8px;
-  }
-  .btn-primary {
-    min-width: 80px;
-    height: 16px;
-  }
-  .btn-outline {
-    height: 16px;
-    font-size: 7px;
-    min-width: 80px;
-    border-width: 1.5px;
-  }
-  .btn-kids {
-    height: 18px;
-    font-size: 9px;
-    min-width: 80px;
-    border-width: 1.5px;
-  }
-  .hero-buttons {
-    margin-top: 8px;
-    gap: 5px;
+    font-size: 18px;
+    max-width: 380px;
   }
   .overlay-panel {
-    left: 24px;
-    right: 24px;
-    top: 60px;
-    bottom: 60px;
-    padding: 28px 28px;
-    border-radius: 10px;
+    left: 30px;
+    right: 30px;
+    top: 90px;
+    bottom: 90px;
+    padding: 40px 36px;
   }
   .overlay-title {
-    font-size: 18px;
-    margin-bottom: 14px;
+    font-size: 30px;
+    margin-bottom: 24px;
   }
   .overlay-text {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 26px;
   }
   .footer {
-    right: 24px;
-    gap: 10px;
+    right: 30px;
+    gap: 18px;
   }
   .footer-text {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
   .navbar {
     padding: 0 20px;
-    top: 12px;
+    top: 16px;
   }
   .nav-menu {
-    gap: 10px;
+    gap: 18px;
   }
   .nav-link {
-    font-size: 9px;
-    letter-spacing: 0.12em;
+    font-size: 14px;
+    letter-spacing: 0.18em;
   }
   .nav-link.active::after {
-    width: 40px;
-    height: 2px;
+    width: 45px;
+    height: 3px;
     bottom: -3px;
   }
   .logo-text {
-    font-size: 9px;
+    font-size: 24px;
   }
   .logo-icon {
-    width: 16px;
-    height: 16px;
+    width: 40px;
+    height: 40px;
   }
   #page-home {
-    padding-left: 40px;
+    padding-left: 30px;
     padding-top: 2vh;
   }
   .hero-title {
-    font-size: 18px;
+    font-size: 46px;
   }
   .hero-badge {
-    font-size: 7px;
+    font-size: 20px;
   }
   .hero-tagline {
-    font-size: 8px;
-    max-width: 180px;
+    font-size: 16px;
+    max-width: 300px;
+    line-height: 18px;
   }
   .hero-divider {
-    width: 18px;
-    margin-bottom: 8px;
+    width: 90px;
+    margin-bottom: 28px;
   }
   .btn {
-    font-size: 7px;
-    padding: 3px 8px;
-  }
-  .btn-primary {
-    min-width: 80px;
-    height: 16px;
-  }
-  .btn-outline {
-    height: 16px;
-    font-size: 7px;
-    min-width: 80px;
-    border-width: 1.5px;
-  }
-  .btn-kids {
-    height: 18px;
-    font-size: 9px;
-    min-width: 80px;
-    border-width: 1.5px;
+    font-size: 17px;
+    min-width: 190px;
+    height: 36px;
+    padding: 8px 20px;
   }
   .hero-buttons {
-    margin-top: 8px;
-    gap: 6px;
+    margin-top: 28px;
+    gap: 12px;
+  }
+  .btn-outline {
+    height: 34px;
+    font-size: 17px;
+    min-width: 190px;
+  }
+  .btn-kids {
+    height: 40px;
+    font-size: 20px;
+    min-width: 190px;
   }
   .sidebar-bar {
     width: 3px;
   }
   .overlay-panel {
-    left: 16px;
-    right: 16px;
-    top: 60px;
-    bottom: 60px;
-    padding: 20px 16px;
-    border-radius: 10px;
+    left: 20px;
+    right: 20px;
+    top: 75px;
+    bottom: 75px;
+    padding: 30px 24px;
+    border-radius: 14px;
   }
   .overlay-title {
-    font-size: 16px;
-    margin-bottom: 12px;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
   .overlay-text {
-    font-size: 11px;
-    line-height: 18px;
-    letter-spacing: 0.08em;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
   }
   .overlay-panel .contact-form {
-    margin-top: 14px;
+    margin-top: 20px;
   }
   .overlay-panel .form-input,
   .overlay-panel .form-textarea {
-    padding: 10px 14px;
-    font-size: 12px;
+    padding: 11px 16px;
+    font-size: 14px;
   }
   .footer {
-    right: 16px;
-    bottom: 14px;
-    gap: 8px;
+    right: 20px;
+    bottom: 20px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
   .footer-text {
-    font-size: 10px;
+    font-size: 13px;
   }
   .social-link {
-    width: 16px;
-    height: 16px;
+    width: 28px;
+    height: 28px;
   }
   .social-link svg {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .nav-menu {
-    gap: 8px;
+    gap: 12px;
   }
   .nav-link {
-    font-size: 8px;
-    letter-spacing: 0.1em;
+    font-size: 11px;
+    letter-spacing: 0.12em;
   }
   .nav-link.active::after {
     width: 30px;
     height: 2px;
   }
   .logo-text {
-    font-size: 8px;
+    font-size: 18px;
   }
   .logo-icon {
-    width: 14px;
-    height: 14px;
+    width: 32px;
+    height: 32px;
   }
   .hero-title {
-    font-size: 16px;
+    font-size: 34px;
   }
   .hero-badge {
-    font-size: 7px;
+    font-size: 16px;
   }
   .hero-tagline {
-    font-size: 7px;
-    max-width: 160px;
+    font-size: 14px;
+    max-width: 240px;
   }
   .hero-divider {
-    width: 16px;
-    margin-bottom: 6px;
+    width: 70px;
+    margin-bottom: 24px;
   }
   .btn {
-    font-size: 7px;
-    min-width: 70px;
-    height: 16px;
-    padding: 3px 8px;
+    font-size: 14px;
+    min-width: 160px;
+    height: 32px;
+    padding: 6px 16px;
   }
   .hero-buttons {
-    margin-top: 8px;
-    gap: 5px;
+    margin-top: 24px;
+    gap: 10px;
   }
   .btn-outline {
-    height: 16px;
-    font-size: 7px;
-    min-width: 70px;
+    height: 30px;
+    font-size: 14px;
+    min-width: 160px;
     border-width: 1.5px;
   }
   .btn-kids {
-    height: 16px;
-    font-size: 8px;
-    min-width: 70px;
+    height: 34px;
+    font-size: 17px;
+    min-width: 160px;
     border-width: 1.5px;
   }
+  }
   .overlay-panel {
-    left: 10px;
-    right: 10px;
-    top: 48px;
-    bottom: 48px;
-    padding: 16px 12px;
+    left: 12px;
+    right: 12px;
+    top: 60px;
+    bottom: 60px;
+    padding: 20px 16px;
   }
   .overlay-title {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 14px;
   }
   .overlay-text {
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: 0.06em;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
   }
   .footer {
-    right: 10px;
-    bottom: 10px;
-    gap: 6px;
+    right: 12px;
+    bottom: 12px;
+    gap: 10px;
   }
   .footer-text {
-    font-size: 9px;
+    font-size: 11px;
   }
   .social-link {
-    width: 14px;
-    height: 14px;
+    width: 24px;
+    height: 24px;
   }
 }
