@@ -70,33 +70,31 @@ ul { list-style: none; }
 
 .navbar {
   position: fixed;
-  top: 24px;
+  top: 42px;
   left: 0;
   right: 0;
   z-index: 20;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 48px;
+  padding: 0 60px;
   pointer-events: none;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   pointer-events: auto;
 }
 
 .logo-icon {
   flex-shrink: 0;
-  width: 40px;
-  height: 40px;
 }
 
 .logo-text {
   font-family: var(--font-body);
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 0.03em;
   color: var(--white);
@@ -105,15 +103,15 @@ ul { list-style: none; }
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 48px;
   pointer-events: auto;
 }
 
 .nav-link {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.23em;
   color: var(--white);
   opacity: 0.5;
   transition: opacity 0.3s;
@@ -133,8 +131,8 @@ ul { list-style: none; }
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
+  width: 90px;
+  height: 4px;
   background: var(--gold);
 }
 
@@ -159,7 +157,7 @@ ul { list-style: none; }
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 6vh 0 0 80px;
+  padding: 6vh 0 0 103px;
   pointer-events: none;
 }
 
@@ -174,11 +172,11 @@ ul { list-style: none; }
 
 .hero-badge {
   font-family: var(--font-body);
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 700;
   letter-spacing: 0.12em;
   color: var(--gold);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -190,25 +188,25 @@ ul { list-style: none; }
   letter-spacing: 0.13em;
   color: var(--white);
   text-shadow: -3px 3px 0px var(--gold);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .hero-tagline {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 20px;
   color: var(--white);
   opacity: 0.85;
-  max-width: 400px;
-  margin-bottom: 16px;
+  max-width: 492px;
+  margin-bottom: 20px;
 }
 
 .hero-divider {
-  width: 80px;
-  height: 3px;
+  width: 115px;
+  height: 4px;
   background: var(--gold-line);
-  margin-bottom: 28px;
+  margin-bottom: 36px;
   border-radius: 2px;
 }
 
@@ -217,13 +215,13 @@ ul { list-style: none; }
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px 20px;
+  padding: 10px 24px;
   border: none;
   border-radius: 100px;
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 30px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
@@ -233,8 +231,8 @@ ul { list-style: none; }
 .btn-primary {
   background: var(--gold);
   color: #000000;
-  min-width: 200px;
-  height: 32px;
+  min-width: 235px;
+  height: 38px;
 }
 
 .btn-primary:hover {
@@ -246,16 +244,16 @@ ul { list-style: none; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-  margin-top: 28px;
+  gap: 14px;
+  margin-top: 36px;
 }
 
 .btn-outline {
   background: transparent;
   color: var(--white);
   border: 2px solid rgba(255, 255, 255, 0.3);
-  min-width: 200px;
-  height: 32px;
+  min-width: 235px;
+  height: 38px;
   letter-spacing: 0.2em;
 }
 
@@ -269,53 +267,62 @@ ul { list-style: none; }
   background: transparent;
   color: var(--white);
   border: 2px solid rgba(255, 255, 255, 0.15);
-  min-width: 200px;
-  height: 36px;
-  font-size: 20px;
+  min-width: 235px;
+  height: 46px;
+  font-size: 24px;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: none;
   gap: 0;
-  padding: 6px 18px;
+  padding: 10px 24px;
 }
 
-#page-home .hero-badge,
-#page-home .hero-title,
-#page-home .hero-tagline,
-#page-home .hero-divider,
-#page-home .hero-buttons,
-#page-home .hero-buttons .btn {
-  pointer-events: auto;
+.btn-kids:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
 }
+
+.btn-kids .c1 { color: #FF3939; }
+.btn-kids .c2 { color: #FF7B3A; }
+.btn-kids .c3 { color: #FFB83A; }
+.btn-kids .c4 { color: #39D639; }
+.btn-kids .c5 { color: #39B8FF; }
+.btn-kids .c6 { color: #7B5CFF; }
+.btn-kids .c7 { color: #FF39B8; }
+.btn-kids .c8 { color: #FF5C5C; }
+.btn-kids .c9 { color: #FF9E3A; }
+.btn-kids .c10 { color: #3AE0A0; }
+.btn-kids .c11 { color: #B85CFF; }
 
 /* ===== OVERLAY PAGES (About, Impact, Contact) ===== */
 
 .overlay-panel {
   position: absolute;
-  left: 60px;
-  right: 60px;
-  top: 100px;
-  bottom: 100px;
+  left: 78px;
+  right: 78px;
+  top: 141px;
+  bottom: 141px;
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(20px);
-  border-radius: 14px;
-  padding: 60px 64px 50px;
+  border-radius: 19px;
+  padding: 100px 96px 80px;
   display: flex;
   flex-direction: column;
 }
 
 .overlay-close {
   position: absolute;
-  top: 16px;
-  right: 20px;
-  width: 28px;
-  height: 28px;
+  top: 24px;
+  right: 28px;
+  width: 36px;
+  height: 36px;
   border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.08);
   color: var(--white);
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1;
   cursor: pointer;
   display: flex;
@@ -332,27 +339,27 @@ ul { list-style: none; }
 
 .overlay-title {
   font-family: var(--font-body);
-  font-size: 34px;
+  font-size: 50px;
   font-weight: 600;
   letter-spacing: 0.14em;
   color: var(--white);
-  margin-bottom: 28px;
+  margin-bottom: 48px;
 }
 
 .overlay-text {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 23px;
   font-weight: 600;
-  line-height: 26px;
-  letter-spacing: 0.12em;
+  line-height: 34px;
+  letter-spacing: 0.16em;
   color: var(--white);
-  max-width: 800px;
+  max-width: 1414px;
 }
 
 /* Contact form inside overlay */
 .overlay-panel .contact-form {
-  margin-top: 24px;
-  max-width: 480px;
+  margin-top: 32px;
+  max-width: 560px;
 }
 
 .overlay-panel .form-input,
@@ -388,19 +395,19 @@ ul { list-style: none; }
 
 .footer {
   position: fixed;
-  bottom: 24px;
-  right: 60px;
+  bottom: 30px;
+  right: 80px;
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 24px;
   pointer-events: none;
 }
 
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   pointer-events: auto;
 }
 
@@ -408,8 +415,8 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--social-border);
   color: var(--social-border);
@@ -424,9 +431,9 @@ ul { list-style: none; }
 
 .footer-text {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 24px;
   color: var(--footer-text);
   white-space: nowrap;
   pointer-events: auto;
@@ -439,31 +446,31 @@ ul { list-style: none; }
     padding: 0 40px;
   }
   .nav-menu {
-    gap: 24px;
+    gap: 36px;
   }
   .hero-title {
     font-size: 80px;
   }
   .hero-badge {
-    font-size: 20px;
+    font-size: 28px;
   }
   #page-home {
-    padding-left: 64px;
+    padding-left: 70px;
   }
   .overlay-panel {
     padding: 50px 60px;
     left: 40px;
     right: 40px;
-    top: 80px;
-    bottom: 80px;
+    top: 100px;
+    bottom: 100px;
   }
   .overlay-title {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 28px;
   }
   .overlay-text {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .footer {
     right: 50px;
@@ -475,50 +482,49 @@ ul { list-style: none; }
     padding: 0 30px;
   }
   .nav-menu {
-    gap: 20px;
+    gap: 28px;
   }
   .nav-link {
-    font-size: 14px;
+    font-size: 17px;
   }
   .nav-link.active::after {
-    width: 55px;
-    height: 3px;
+    width: 65px;
   }
   #page-home {
-    padding-left: 48px;
+    padding-left: 50px;
     padding-top: 4vh;
   }
   .hero-title {
     font-size: 64px;
   }
   .hero-badge {
-    font-size: 18px;
+    font-size: 24px;
   }
   .hero-tagline {
-    font-size: 14px;
-    max-width: 320px;
+    font-size: 18px;
+    max-width: 380px;
   }
   .overlay-panel {
     left: 30px;
     right: 30px;
-    top: 80px;
-    bottom: 80px;
+    top: 90px;
+    bottom: 90px;
     padding: 40px 36px;
   }
   .overlay-title {
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 24px;
   }
   .overlay-text {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 26px;
   }
   .footer {
     right: 30px;
-    gap: 14px;
+    gap: 18px;
   }
   .footer-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -528,11 +534,11 @@ ul { list-style: none; }
     top: 16px;
   }
   .nav-menu {
-    gap: 14px;
+    gap: 18px;
   }
   .nav-link {
     font-size: 14px;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.18em;
   }
   .nav-link.active::after {
     width: 45px;
@@ -540,48 +546,50 @@ ul { list-style: none; }
     bottom: -3px;
   }
   .logo-text {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .logo-icon {
+    width: 40px;
+    height: 40px;
   }
   #page-home {
-    padding-left: 24px;
+    padding-left: 30px;
     padding-top: 2vh;
   }
   .hero-title {
     font-size: 46px;
   }
   .hero-badge {
-    font-size: 16px;
+    font-size: 20px;
   }
   .hero-tagline {
-    font-size: 14px;
-    max-width: 280px;
+    font-size: 16px;
+    max-width: 300px;
     line-height: 18px;
   }
   .hero-divider {
-    width: 60px;
-    margin-bottom: 20px;
+    width: 90px;
+    margin-bottom: 28px;
   }
   .btn {
-    font-size: 14px;
-    min-width: 170px;
-    height: 28px;
-    padding: 6px 16px;
+    font-size: 17px;
+    min-width: 190px;
+    height: 36px;
+    padding: 8px 20px;
   }
   .hero-buttons {
-    margin-top: 20px;
-    gap: 8px;
+    margin-top: 28px;
+    gap: 12px;
   }
   .btn-outline {
-    height: 28px;
-    font-size: 14px;
-    min-width: 170px;
-    border-width: 1.5px;
+    height: 34px;
+    font-size: 17px;
+    min-width: 190px;
   }
   .btn-kids {
-    height: 32px;
-    font-size: 17px;
-    min-width: 170px;
-    border-width: 1.5px;
+    height: 40px;
+    font-size: 20px;
+    min-width: 190px;
   }
   .sidebar-bar {
     width: 3px;
@@ -613,27 +621,27 @@ ul { list-style: none; }
   }
   .footer {
     right: 20px;
-    bottom: 18px;
-    gap: 12px;
+    bottom: 20px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: flex-end;
   }
   .footer-text {
-    font-size: 12px;
+    font-size: 13px;
   }
   .social-link {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
   }
   .social-link svg {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 }
 
 @media (max-width: 480px) {
   .nav-menu {
-    gap: 10px;
+    gap: 12px;
   }
   .nav-link {
     font-size: 11px;
@@ -644,7 +652,7 @@ ul { list-style: none; }
     height: 2px;
   }
   .logo-text {
-    font-size: 16px;
+    font-size: 18px;
   }
   .logo-icon {
     width: 32px;
@@ -654,37 +662,38 @@ ul { list-style: none; }
     font-size: 34px;
   }
   .hero-badge {
-    font-size: 14px;
+    font-size: 16px;
   }
   .hero-tagline {
-    font-size: 12px;
-    max-width: 220px;
+    font-size: 14px;
+    max-width: 240px;
   }
   .hero-divider {
-    width: 50px;
-    margin-bottom: 16px;
+    width: 70px;
+    margin-bottom: 24px;
   }
   .btn {
-    font-size: 12px;
-    min-width: 140px;
-    height: 24px;
-    padding: 5px 12px;
+    font-size: 14px;
+    min-width: 160px;
+    height: 32px;
+    padding: 6px 16px;
   }
   .hero-buttons {
-    margin-top: 16px;
-    gap: 8px;
+    margin-top: 24px;
+    gap: 10px;
   }
   .btn-outline {
-    height: 24px;
-    font-size: 12px;
-    min-width: 140px;
+    height: 30px;
+    font-size: 14px;
+    min-width: 160px;
     border-width: 1.5px;
   }
   .btn-kids {
-    height: 26px;
-    font-size: 15px;
-    min-width: 140px;
+    height: 34px;
+    font-size: 17px;
+    min-width: 160px;
     border-width: 1.5px;
+  }
   }
   .overlay-panel {
     left: 12px;
@@ -705,13 +714,13 @@ ul { list-style: none; }
   .footer {
     right: 12px;
     bottom: 12px;
-    gap: 8px;
+    gap: 10px;
   }
   .footer-text {
-    font-size: 10px;
+    font-size: 11px;
   }
   .social-link {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 }
